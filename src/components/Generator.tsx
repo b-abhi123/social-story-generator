@@ -36,7 +36,7 @@ interface ChildProfile {
 
 // ── Backend API ─────────────────────────────────────────────────────────────
 async function generateSocialStory(profile: ChildProfile): Promise<SocialStory> {
-  const response = await fetch('http://localhost:5050/generate', {
+  const response = await fetch('https://social-story-generator.onrender.com/generate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(profile),

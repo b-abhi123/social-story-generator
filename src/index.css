@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "ArizonaFlare";
-  src: url("fonnts.com-ABCArizonaFlareVariable-Trial.ttf") format("truetype");
+  src: url("/fonts/fonnts.com-ABCArizonaFlareVariable-Trial.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "HomepageBaukasten";
-  src: url("HomepageBaukasten-Bold.ttf") format("truetype");
+  src: url("/fonts/HomepageBaukasten-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
