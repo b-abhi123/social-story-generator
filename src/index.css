@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "ArizonaFlare";
+  src: url("fonnts.com-ABCArizonaFlareVariable-Trial.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HomepageBaukasten";
+  src: url("HomepageBaukasten-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-primary: #6DA9F6;
+  --color-primary-foreground: #ffffff;
+  --color-background: #ffffff;
+  --color-card: #ffffff;
+  --color-card-foreground: #1a1a1a;
+  --color-muted: #8e9299;
+  --color-accent: #FAE470;
+
+  --font-sans: "HomepageBaukasten", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "HomepageBaukasten", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-card-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    @apply font-bold tracking-tight;   /* bold instead of medium */
+  }
+}
+
+.ozzy-card {
+  @apply bg-white rounded-[32px] shadow-sm border border-black/5 p-8 transition-all hover:shadow-md;
+}
+
+.ozzy-button-base {
+  @apply px-8 py-3 rounded-full font-medium transition-all active:scale-95;
+}
+
+.ozzy-button-primary {
+  @apply px-8 py-3 rounded-full font-medium transition-all active:scale-95 bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/20;
+}
+
+.ozzy-button-secondary {
+  @apply px-8 py-3 rounded-full font-medium transition-all active:scale-95 bg-white text-primary border border-primary/20 hover:bg-primary/5;
+}
